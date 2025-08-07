@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1250px) {
+   main {
+      flex-direction: column;
+   }
+   .description {
+      display:none;
+   }
+}
+
+@media only screen and (max-width: 764px) {
+   .superHeroContainer {
+      display: none;
+   }
+   body {
+      align-items: center;
+   }
+   .smallDisplayMessage {
+      display:flex;
+   }
+}
+

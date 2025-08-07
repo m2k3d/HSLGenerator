@@ -1,0 +1,456 @@
+:root {
+   --backgroundColor: hwb(0 5% 95%);
+   --main: hsl(0, 0%, 10%);
+   --mainSecond: hsl(0, 0%, 18%);
+
+   --yellow: hsl(41, 94%, 80%);
+   --yellowSecond: hsl(41.25, 94.12%, 85%);
+
+
+   --orange: hsl(28.79, 100%, 66.08%);
+   --orangeSecond: hsl(28.79, 100%, 76.08%);
+
+   --white: hsl(0, 0%, 92%);
+   --whiteSecond: hsl(0, 0%, 82%);
+
+   --firstVarColor: white;
+   --secondVarColor: white;
+   --thirdVarColor: white;
+
+   --palettText: 1;
+
+   --colorText1: hsl(0, 0%, 10%, 1);
+   --colorText2: hsl(0, 0%, 10%, 1);
+   --colorText3: hsl(0, 0%, 10%, 1);
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Ubuntu;
+}
+
+li {
+   list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:link {
+   color: var(--white);
+}
+
+a:visited {
+   color: var(--white);
+}
+
+a:hover {
+   color: var(--white);
+}
+
+a:active {
+   color: var(--white);
+}
+
+.mainLogo {
+   font-weight: 400;
+   height: 82px;
+   width: auto;
+   font-size: 62px;
+   align-self: center;
+   justify-self: center;
+   color: var(--firstVarColor);
+   transition: all 0.5s ease;
+}
+
+.mainLogo:hover {
+   color: var(--white);
+   transition: all 0.5s ease;
+}
+
+.backgroundColorOnly {
+   width: 100dvw;
+   height: 100dvh;
+   position: fixed;
+   z-index: -4;
+   background-color: var(--backgroundColor);
+
+}
+
+.backgroundColor {
+   width: 100dvw;
+   height: 100dvh;
+   background-color: var(--backgroundColor);
+   z-index: -3;
+   position: fixed;
+   display: flex;
+   filter: blur(4dvh);
+
+}
+
+.Circle1 {
+   width: 60%;
+   height: 70%;
+   bottom: -22%;
+   background: var(--firstVarColor);
+   border-radius: 100%;
+   position: absolute;
+   transition: all 0.5s ease;
+}
+
+.Circle2 {
+   width: 60%;
+   height: 90%;
+   top: -22%;
+   right: -4%;
+   background: var(--secondVarColor);
+   opacity: 0.5;
+   border-radius: 100%;
+   position: absolute;
+   transition: all 0.5s ease;
+}
+
+.Circle3 {
+   width: 60%;
+   height: 90%;
+   top: 52%;
+   right: -10%;
+   background: var(--firstVarColor);
+   opacity: 0.7;
+   border-radius: 100%;
+   position: absolute;
+   transition: all 0.5s ease;
+}
+
+.Circle4 {
+   width: 60%;
+   height: 90%;
+   top: -10%;
+   right: 30%;
+   opacity: 0.4;
+   background: var(--thirdVarColor);
+   border-radius: 100%;
+   position: absolute;
+   transition: all 0.5s ease;
+}
+
+.backgroundNoise {
+   position: fixed;
+   width: 100dvw;
+   height: 100dvh;
+   z-index: -2;
+   opacity: 0.2;
+}
+
+.backgroundDarker {
+   position: fixed;
+   background-color: var(--backgroundColor);
+   width: 100dvw;
+   height: 100dvh;
+   z-index: -1;
+   opacity: 0.4;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.superHeroContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+   width: 90%;
+   min-width: 750px;
+   margin-top: 2rem;
+   padding: 2rem;
+   padding-top: 2rem;
+   padding-bottom: 3rem;
+   border-radius: 3rem;
+   backdrop-filter: blur(1dvh);
+   background-color: hsl(0, 0%, 10%, 0.4);
+
+   box-shadow: 20px 20px 30px hsl(0, 0%, 10%, 0.8);
+
+   border-top: 0.1dvh solid hsl(0, 0%, 92%, 0.2);
+   border-left: 0.1dvh solid hsl(0, 0%, 92%, 0.2);
+}
+
+header {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+}
+
+.headerHeroButtons {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   font-size: x-large;
+
+}
+
+#contactButton {
+   background-color: var(--whiteSecond);
+   color: var(--main);
+   padding: 21px;
+   border-radius: 1000rem;
+   transition: all 0.5s ease;
+   box-shadow: 5px 5px 20px hsl(0, 0%, 92%, 0.3);
+}
+
+#contactButton:hover {
+   background-color: var(--white);
+   transition: all 0.5s ease;
+   box-shadow: 5px 5px 20px hsl(0, 0%, 92%, 0.4);
+}
+
+#tryButton {
+   padding: 21px;
+   color: var(--whiteSecond);
+   transition: all 0.5s ease;
+}
+
+#tryButton:hover {
+   color: var(--white);
+   transition: all 0.5s ease;
+}
+
+main {
+   display: flex;
+   flex-direction: row;
+   height: 100%;
+   width: 100%;
+   gap: 2rem;
+}
+
+.mainPart {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.mainLeftPart {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.hexAndGenerateButton {
+   display: flex;
+}
+
+#randomColorButton {
+   background-color: var(--mainSecond);
+   color: var(--whiteSecond);
+   height: 74px;
+   padding: 21px;
+   border: none;
+   border-top-right-radius: 1000rem;
+   border-bottom-right-radius: 1000rem;
+   border-bottom-left-radius: 1000rem;
+   border-top-left-radius: 1000rem;
+   box-shadow: 15px 15px 20px hsl(0, 0%, 5%, 0.3);
+   font-size: xx-large;
+   transition: all 0.5s ease;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-top: 0.1dvh solid hsl(0, 0%, 92%, 0.2);
+   border-left: 0.1dvh solid hsl(0, 0%, 92%, 0.2);
+}
+#randomColorButton:hover {
+   box-shadow: 5px 5px 20px hsl(0, 0%, 92%, 0.02);
+}
+
+#randomColorButton:active {
+   box-shadow: 5px 5px 20px hsl(0, 0%, 92%, 0.05);
+   color: var(--white);
+   transition: all 0.5s ease;
+}
+
+.colorOutputBox {
+   height: 100%;
+   width: 100%;
+   flex-grow: 1;
+   background-color: var(--mainSecond);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-left: 0.1dvh solid hsl(0, 0%, 92%, 0.2);
+   transition: all 0.5s ease;
+}
+
+.mainRightPart {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   min-height: 450px;
+   background-color: var(--whiteSecond);
+   border-top-left-radius: 43.5px;
+   border-top-right-radius: 43.5px;
+   border-bottom-left-radius: 43.5px;
+   border-bottom-right-radius: 43.5px;
+   border-color: var(--main);
+   box-shadow: 15px 15px 20px hsl(0, 0%, 5%, 0.3);
+   transition: all 0.5s ease;
+
+}
+
+.textAboutPallet {
+   position: absolute;
+   align-self: center;
+   justify-self: center;
+   font-size: xx-large;
+   opacity: var(--palettText);
+}
+
+.mainRightPart:hover {
+   box-shadow: 5px 5px 20px hsl(0, 0%, 92%, 0.1);
+   transition: all 0.5s ease;
+}
+
+#hslColorOutput1 {
+   height: 200px;
+   background-color: var(--firstVarColor);
+   border-top-left-radius: 42.5px;
+   border-top-right-radius: 42.5px;
+   font-size: xx-large;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-top: 0.1dvh solid hsl(0, 0%, 92%, 0.2);
+}
+
+#hslColorOutput2 {
+   height: 200px;
+   background-color: var(--secondVarColor);
+   font-size: xx-large;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#hslColorOutput3 {
+   height: 200px;
+   background-color: var(--thirdVarColor);
+   border-bottom-left-radius: 42.5px;
+   border-bottom-right-radius: 42.5px;
+   font-size: xx-large;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#hslColorOutputText1 {
+   color: var(--colorText1);
+}
+
+#hslColorOutputText2 {
+   color: var(--colorText2);
+}
+
+#hslColorOutputText3 {
+   color: var(--colorText3);
+}
+
+#userHexColor {
+   background-color: var(--mainSecond);
+   color: var(--white);
+   height: 74px;
+   padding: 21px;
+   border: none;
+   border-top-left-radius: 1000rem;
+   border-bottom-left-radius: 1000rem;
+   box-shadow: 15px 15px 20px hsl(0, 0%, 5%, 0.3);
+   font-size: xx-large;
+   transition: all 0.5s ease;
+   flex-grow: 1;
+   border-top: 0.1dvh solid hsl(0, 0%, 92%, 0.2);
+   border-left: 0.1dvh solid hsl(0, 0%, 92%, 0.2);
+}
+
+#userHexColor:focus {
+   box-shadow: 15px 15px 20px hsl(0, 0%, 92%, 0.05);
+   transition: all 0.5s ease;
+}
+
+#generateButton {
+   background-color: var(--mainSecond);
+   color: var(--whiteSecond);
+   height: 74px;
+   padding: 21px;
+   border: none;
+   border-top-right-radius: 1000rem;
+   border-bottom-right-radius: 1000rem;
+   box-shadow: 15px 15px 20px hsl(0, 0%, 5%, 0.3);
+   font-size: xx-large;
+   transition: all 0.5s ease;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-top: 0.1dvh solid hsl(0, 0%, 92%, 0.2);
+}
+
+#generateButton:active {
+   box-shadow: 5px 5px 20px hsl(0, 0%, 92%, 0.05);
+   color: var(--white);
+   transition: all 0.5s ease;
+}
+
+.description {
+   background-Color:hsl(0, 0%, 18%, 0.1);
+   backdrop-filter:blur(0.01dvh);
+   height: 220%;
+   width: 100%;
+   flex-grow:1;
+   font-size: xx-large;
+   color: var(--whiteSecond);
+   transition: all 0.5s ease;
+   box-shadow: 15px 15px 20px hsl(0, 0%, 5%, 0.1);
+   border-radius:42.5px;
+   display: flex;
+   justify-content: flex-start;
+   align-items:flex-start;
+   padding: 21px;
+   border-top: 0.1dvh solid hsl(0, 0%, 92%, 0.2);
+   border-left: 0.1dvh solid hsl(0, 0%, 92%, 0.2);
+   transition: all 0.5s ease;
+}
+
+.description:hover {
+   color: var(--white);
+   transition: all 0.5s ease;
+   box-shadow: 5px 5px 20px hsl(0, 0%, 92%, 0.05);
+}
+
+.smallDisplayMessage {
+   position: fixed;
+   align-self:center;
+   top:30%;
+   bottom:30%;
+   left:15%;
+   right:15%;
+   padding: 21px;
+   justify-self: center;
+   font-size: xx-large;
+   color:var(--white);
+   background-color:var(--main);
+   width:100%;
+   height: 100%;
+   z-index:999;
+   display:none;
+}
